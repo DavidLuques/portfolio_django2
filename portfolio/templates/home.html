@@ -1,3 +1,6 @@
+{%  extends 'layout.html' %}
+
+{% block content %}
 <h1>HOME </h1>
 {%for project in projects%}
 <h2>{{project.title}}</h2>
@@ -7,3 +10,4 @@
 <a href="{{project.url}}">{{project.url}}</a>
 {% endif %}
 {% endfor %}
+{% endblock %}
